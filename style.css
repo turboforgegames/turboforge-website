@@ -323,3 +323,17 @@ html {
 .cards a:hover{
     color:white;
 }
+
+.cards a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.cards a:visited {
+  color: white;
+}
+
+.cards a:hover {
+  color: white;
+}
