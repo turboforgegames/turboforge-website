@@ -6,7 +6,7 @@ form.addEventListener("submit", async (e) => {
     const email = form.querySelector("input").value;
 
     try {
-        await fetch("https://script.google.com/u/0/home/projects/1cOE4e0XSCpxei04vwAgP_SxKSZvsMOM5_IxjsXKIXAfIy0-U8IXcZBpu/edit", {
+        await fetch("https://script.google.com/macros/s/AKfycbzLE9CLkX7BH0fLlnMoMHsrU-3nyqL-c7FfBgLPOOPgR4QSXtIwZ74rcdmgUGjrtFDF/exec", {
             method: "POST",
             body: JSON.stringify({
                 email: email
