@@ -13,10 +13,10 @@ form.addEventListener("submit", async (e) => {
             })
         });
 
-        alert("Thanks for joining the TurboForge Beta!");
+        alert("✅ Welcome Racer!\n\nYou have successfully joined the Garage Empire Racing Beta List.");
         form.reset();
 
     } catch (error) {
-        alert("Something went wrong. Please try again.");
+        alert("Something went wrong. Please try again later.");
     }
 });
