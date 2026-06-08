@@ -369,6 +369,7 @@ html {
 } 
 
 #successMessage {
+  display: none;
   margin-top: 20px;
   padding: 18px;
   background: rgba(255, 159, 0, 0.12);
