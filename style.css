@@ -360,3 +360,10 @@ html {
   justify-content: center;
   align-items: center;
 }
+
+.small-note {
+    color: #aaa;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
