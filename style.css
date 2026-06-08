@@ -343,3 +343,20 @@ html {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
