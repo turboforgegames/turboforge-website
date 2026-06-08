@@ -1,6 +1,7 @@
-const form = document.querySelector("form");
+const form = document.getElementById("betaForm");
+const successMessage = document.getElementById("successMessage");
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const email = form.querySelector("input").value;
@@ -16,6 +17,6 @@ form.addEventListener("submit", async (e) => {
         })
     });
 
-    alert("✅ Welcome Racer!\n\nYou have successfully joined the Garage Empire Racing Beta List.");
+    successMessage.style.display = "block";
     form.reset();
 });
