@@ -20,3 +20,20 @@ form.addEventListener("submit", function (e) {
     successMessage.style.display = "block";
     form.reset();
 });
+
+const founderForm = document.getElementById("founderForm");
+const founderSuccess = document.getElementById("founderSuccess");
+
+if (founderForm) {
+
+    founderForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        founderSuccess.style.display = "block";
+
+        founderForm.reset();
+
+    });
+
+}
