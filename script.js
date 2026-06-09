@@ -1,26 +1,30 @@
+// Beta Form
 const form = document.getElementById("betaForm");
 const successMessage = document.getElementById("successMessage");
 
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    const email = form.querySelector("input").value;
+        const email = form.querySelector("input").value;
 
-    fetch("https://script.google.com/macros/s/AKfycbzLE9CLkX7BH0fLlnMoMHsrU-3nyqL-c7FfBgLPOOPgR4QSXtIwZ74rcdmgUGjrtFDF/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-            "Content-Type": "text/plain"
-        },
-        body: JSON.stringify({
-            email: email
-        })
+        fetch("https://script.google.com/macros/s/AKfycbzLE9CLkX7BH0fLlnMoMHsrU-3nyqL-c7FfBgLPOOPgR4QSXtIwZ74rcdmgUGjrtFDF/exec", {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "text/plain"
+            },
+            body: JSON.stringify({
+                email: email
+            })
+        });
+
+        successMessage.style.display = "block";
+        form.reset();
     });
+}
 
-    successMessage.style.display = "block";
-    form.reset();
-});
-
+// Founder Waitlist Form
 const founderForm = document.getElementById("founderForm");
 const founderSuccess = document.getElementById("founderSuccess");
 
@@ -29,8 +33,6 @@ if (founderForm) {
         e.preventDefault();
 
         founderSuccess.style.display = "block";
-
         founderForm.reset();
     });
 }
-
