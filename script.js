@@ -30,10 +30,11 @@ if (founderForm) {
 
         e.preventDefault();
 
-        founderSuccess.style.display = "block";
+       style="display:none;"
 
         founderForm.reset();
 
     });
 
 }
+
