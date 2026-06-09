@@ -25,16 +25,12 @@ const founderForm = document.getElementById("founderForm");
 const founderSuccess = document.getElementById("founderSuccess");
 
 if (founderForm) {
-
     founderForm.addEventListener("submit", function (e) {
-
         e.preventDefault();
 
-       style="display:none;"
+        founderSuccess.style.display = "block";
 
         founderForm.reset();
-
     });
-
 }
 
