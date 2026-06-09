@@ -379,3 +379,10 @@ html {
   font-size: 18px;
   font-weight: bold;
 }
+
+.founder-counter {
+    color: orange;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
