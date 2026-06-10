@@ -32,6 +32,25 @@ if (founderForm) {
     founderForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
+        const inputs = founderForm.querySelectorAll("input");
+
+        const name = inputs[0].value;
+        const mobile = inputs[1].value;
+        const email = inputs[2].value;
+
+        fetch("https://script.google.com/macros/s/AKfycbwKN3E8nCOpwaVBUMPSz2j8CVKT2KavRjqXC7ZxFcLR7b60VI2y_94bFpg7B4ELe5Vzbw/exec", {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "text/plain"
+            },
+            body: JSON.stringify({
+                name: name,
+                mobile: mobile,
+                email: email
+            })
+        });
+
         founderSuccess.style.display = "block";
         founderForm.reset();
     });
